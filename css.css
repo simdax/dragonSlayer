@@ -1,0 +1,111 @@
+html{
+	min-height: 100%;
+}
+
+
+p{
+}
+h1,h2{
+  text-shadow: -1px 0 white, 0 -1px white, -1px 0 white, 0 -1px white}
+body{
+	/*min-height: 100%:;*/
+
+	margin: 0; 
+	background-image: url(https://images3.alphacoders.com/330/thumb-1920-33079.jpg);
+	background-size: cover;
+	background-repeat: no-repeat; 
+	color: black;		
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+    vertical-align: middle;
+    margin: 3px;
+
+}
+
+h1{
+	box-shadow: 0 0 10px 10px red;
+	background-color: tomato;
+	margin-bottom: 10px;
+}
+
+a{
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+	margin: 20px;
+	margin-left: 40%;
+	cursor: pointer;
+	padding: 15px;
+	background-color: pink;
+	transition: all 0.5s;
+}
+a:hover{
+	box-shadow: 0 0 10px 20px rgba(255,200,0,0.8);
+}
+
+#wrapper{
+	width: 80%;
+	margin: auto;
+	padding: 10px; 
+  background-color:rgba(255,255,200,0.64);
+}
+
+h2{
+	margin: 50px 0; 
+	box-shadow: 0 0 10px 10px lightblue;
+	background-color: lightblue;
+}
+
+ul{
+	padding-left: 100px;
+}
+form{
+	margin-bottom: 50px;
+}
+
+
+li p{
+		/*box-shadow: 0 0 15px 3px black	;*/
+
+    display: inline-block;
+    margin: 5px;
+    width: 50%;
+    vertical-align: sub;
+    background: rgba(255,255,255,0.72);
+    padding: 10px;
+    border-radius: 10%;
+}
+input:checked ~ p{
+	margin: 0;
+	border: 5px solid	rgba(200,0,0,0.52);
+}
+input[type=radio]{
+	display: none;
+}
+
+legend{
+	padding: 10px;
+	border-radius: 20%; 
+	background-color: rgba(20,200,20,0.75);
+}	
+
+
+header{
+	/*position: fixed;*/
+}
+
+nav{
+	padding: 20px 10px; 
+	background-color: rgba(200,150,0,0.75);
+	margin-left: 70%;
+}
+
+

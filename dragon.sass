@@ -1,0 +1,56 @@
+
+@function decimal-round($number, $digits: 0, $mode: round)
+  $n: 1
+
+  // $number must be a number
+  @if type-of($number) != number
+    @warn "#{$number} is not a number."
+
+    @return $number
+
+  // $digits must be a unitless number
+  @if type-of($digits) != number
+    @warn "#{$digits} is not a number."
+
+    @return $number
+  @else if not unitless($digits)
+    @warn "#{$digits} has a unit."
+
+    @return $number
+
+  @for $i from 1 through $digits
+    $n: $n * 10
+
+  @if $mode == round
+    @return round($number * $n) / $n
+  @else if $mode == ceil
+    @return ceil($number * $n) / $n
+  @else if $mode == floor
+    @return floor($number * $n) / $n
+  @else
+    @warn "#{$mode} is undefined keyword."
+
+    @return $number
+
+@keyframes dragonColor
+  @for $i from 0 through 100
+    $bool: random()
+    $bool: decimal-round($bool)
+    @debug $bool
+    #{$i}
+      @if $bool
+        background-color: red
+      @else
+        background-color: blue
+
+@keyframes dragon
+  @for $i from 0 through 100
+    #{$i}%
+      transform: translateY(random(500) * 1px) translateX(random(1200) * 1px)
+
+#dragon
+  text-align: center
+  animation-name: dragon
+  animation-duration: 60s
+  animation-iteration-count: infinite
+  animation-direction: alternate
