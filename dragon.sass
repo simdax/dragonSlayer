@@ -36,7 +36,6 @@
   @for $i from 0 through 100
     $bool: random()
     $bool: decimal-round($bool)
-    @debug $bool
     #{$i}
       @if $bool
         background-color: red
@@ -51,6 +50,16 @@
 #dragon
   text-align: center
   animation-name: dragon
-  animation-duration: 60s
+  animation-duration: 120s
   animation-iteration-count: infinite
   animation-direction: alternate
+
+
+#dragonHP
+  text-align: center
+  font-size: 3rem
+  color: olive
+
+
+[hidden]
+  display: none

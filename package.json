@@ -1,0 +1,27 @@
+{
+  "name": "dragonslayer",
+  "version": "1.0.0",
+  "description": "aventure",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "browsersync": "^0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simdax/dragonSlayer.git"
+  },
+  "author": "simdax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simdax/dragonSlayer/issues"
+  },
+  "homepage": "https://github.com/simdax/dragonSlayer#readme"
+}
